@@ -1,6 +1,6 @@
 package controller;
 
-public class CalculateBMI {
+public class main {
 
 	//Enter the code here....
 
