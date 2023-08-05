@@ -1,10 +1,8 @@
 package controller;
 
-public class main {
+public class CalculateBMI {
 
-	//Enter the code here....
-
-	public static double calculate(double height, double weight) {
+    public static double calculate(double height, double weight) {
         // BMI Formula: BMI = weight (kg) / height^2 (m^2)
         return weight / (height * height);
     }
@@ -22,5 +20,17 @@ public class main {
         } else {
             return "Extremely Obese";
         }
+    }
+
+    public static void main(String[] args) {
+        // Example usage
+        double height = 1.75; // in meters
+        double weight = 65; // in kilograms
+
+        double bmiValue = calculate(height, weight);
+        System.out.println("BMI: " + bmiValue);
+
+        String description = description(bmiValue);
+        System.out.println("BMI Description: " + description);
     }
 }
